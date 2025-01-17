@@ -1,0 +1,46 @@
+header{
+    background-image: linear-gradient(to bottom, black, transparent);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    nav{
+        margin-inline: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+            display: flex;
+            margin: 20px;
+            list-style: none;
+            align-items: center;
+            img{
+                width: 170px;
+            }
+            li{
+                margin: 20px;
+                .headerbtn{
+                    text-decoration: none;
+                    color: #fff;
+                    &:hover{
+                        color: #cca761;
+                        transition: color .2s ease;
+                    }
+                }
+                .contactobtn{
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: 15px;
+                    background-color: #b38838;
+                    padding: 10px;
+                    transition: background-color 0.2s ease;
+                    border: none;
+                    &:hover{
+                        background-color: #856427 ;
+                    }
+                }
+            }
+        }
+    }
+}

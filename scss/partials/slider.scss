@@ -1,0 +1,57 @@
+.container {
+    display: grid;
+    place-content: center;
+    position: relative;
+    overflow: hidden;
+    --position: 50%;
+  }
+  
+  .image-container {
+    position: relative;
+    max-width: 600px;
+    max-height: 90vh;
+  }
+  
+  .image-before,
+  .image-after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-before {
+    clip-path: inset(0 calc(100% - var(--position)) 0 0);
+  }
+  
+  .slider {
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .slider-line {
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    left: var(--position);
+    transform: translateX(-50%);
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    left: var(--position);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
