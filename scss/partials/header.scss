@@ -1,3 +1,7 @@
+.solid{
+    background-image: linear-gradient(to bottom, black, #111111);
+}
+
 header{
     background-image: linear-gradient(to bottom, black, transparent);
     position: fixed;
@@ -14,8 +18,17 @@ header{
             margin: 20px;
             list-style: none;
             align-items: center;
+            color: #fff;
+            a{
+                text-decoration: none;
+                color: #ffffff;
+                margin-inline: 5px;
+            }
             img{
                 width: 170px;
+            }
+            h2{
+                font-size: 35px;
             }
             li{
                 margin: 20px;
